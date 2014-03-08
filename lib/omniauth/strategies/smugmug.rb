@@ -33,6 +33,14 @@ module OmniAuth
         @user_hash ||= MultiJson.decode(@access_token.get('http://api.smugmug.com/services/api/json/1.2.2/?method=smugmug.auth.checkAccessToken').body)['Auth']['User']
       end
 
+      def request_phase
+        options[:authorize_params] = {
+          Access: options['access'],
+          Permissions: options['permissions']
+        }
+        super
+      end
+
     end
   end
 end
