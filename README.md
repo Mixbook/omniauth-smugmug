@@ -8,6 +8,13 @@ Get a SmugMug API key [here](http://www.smugmug.com/hack/apikeys)
 This fork adds the access and permissions options during the authorization phase.
 
 
+Installation
+------------
+
+``` ruby
+gem 'liangzan_omniauth-smugmug', require: 'omniauth-smugmug'
+```
+
 Usage
 -----
 
