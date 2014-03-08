@@ -5,9 +5,9 @@ require "omniauth-smugmug/version"
 Gem::Specification.new do |gem|
   gem.name        = "omniauth-smugmug"
   gem.version     = Omniauth::SmugMug::VERSION
-  gem.authors     = ["Will Butler"]
-  gem.email       = ["wbutler@birdbox.com"]
-  gem.homepage    = "https://github.com/BirdBox/omniauth-smugmug"
+  gem.authors     = ["Will Butler", "Wong Liang Zan"]
+  gem.email       = ["wbutler@birdbox.com", "zan@liangzan.net"]
+  gem.homepage    = "https://github.com/liangzan/omniauth-smugmug"
   gem.description = %q{OmniAuth strategy for SmugMug (OAuth 1.0)}
   gem.summary     = gem.description
 
