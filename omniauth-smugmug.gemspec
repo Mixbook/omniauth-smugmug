@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "omniauth-smugmug/version"
 
 Gem::Specification.new do |gem|
-  gem.name        = "liangzan_omniauth-smugmug"
+  gem.name        = "mixbook_omniauth-smugmug"
   gem.version     = Omniauth::SmugMug::VERSION
   gem.authors     = ["Will Butler", "Wong Liang Zan"]
   gem.email       = ["wbutler@birdbox.com", "zan@liangzan.net"]
