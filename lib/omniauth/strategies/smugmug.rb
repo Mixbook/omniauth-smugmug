@@ -20,7 +20,7 @@ module OmniAuth
           'nickname' => user['NickName'],
           'name' => user['Name'],
           'urls' => {
-              'website' => user['URL'],
+            'website' => user['Uri']
           }
         }
       end
@@ -30,7 +30,7 @@ module OmniAuth
       end
 
       def user
-        @user_hash ||= MultiJson.decode(@access_token.get('https://api.smugmug.com/services/api/json/1.3.0/?method=smugmug.auth.checkAccessToken').body)['Auth']['User']
+        @user_hash ||= MultiJson.decode(@access_token.get('https://api.smugmug.com/api/v2!authuser?_accept=application/json').body)['Response']['User']
       end
 
       def request_phase
